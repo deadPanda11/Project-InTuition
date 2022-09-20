@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+<div class="wrapper">
+    <div class="title">
+      Student Signup
+    </div>
+<form action = "connect.php" method = "POST">
+    <div class="form">
+
+       <div class="inputfield">
+          <label class = "required">Name</label>
+          <input type="text" class="input" name = "name" required>
+       </div>  
+
+       <div class="radiobutton">
+          <label class = "required">Gender</label>
+          <input type="radio" id="male" name="gender" value="m" required>
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="f" required>
+          <label for="female">Female</label><br>
+          <input type="radio" id="other" name="gender" value="o" required>
+          <label for="other">Other</label>
+       </div> 
+
+       <div class="inputfield">
+        <label>Age</label>
+        <input type="text" class="input" name = "age">
+       </div>
+
+       <div class="inputfield">
+        <label>Address</label>
+        <textarea class="textarea"></textarea>
+       </div> 
+
+       <div class="inputfield">
+        <label class = "required">Grade</label>
+        <input type="text" class="input" name = "grade">
+       </div> 
+
+       <div class="radiobutton">
+        <label class = "required">Version</label>
+        <input type="radio" id="ev" name="version" value="ev">
+        <label for="ev">English Version</label><br>
+        <input type="radio" id="em" name="version" value="em">
+        <label for="em">English Medium</label><br>
+        <input type="radio" id="bm" name="version" value="bm">
+        <label for="bm">Bangla Medium</label>
+       </div>  
+
+       <div class="inputfield">
+        <label>Institution</label>
+        <input type="text" class="input" name = "institution">
+       </div>
+
+       <div class="radiobutton">
+        <label class = "required">Preferred Mode</label>
+        <input type="radio" id="on" name="mode" value="on">
+        <label for="on">Online</label><br>
+        <input type="radio" id="off" name="mode" value="off">
+        <label for="off">Offline</label><br>
+       </div> 
+
+       <div class="inputfield">
+        <label class = "required">Preferred Area</label>
+        <input type="text" class="input" name = "area">
+       </div>
+
+       <div class="subjects">
+        <label class = "required">Subjects</label>
+
+        <input type="checkbox" id="sub1" name="eng" value="English">
+        <label for="sub1">English</label>
+        <input type="checkbox" id="sub2" name="bang" value="Bangla">
+        <label for="sub2">Bangla</label>
+        <input type="checkbox" id="sub3" name="math" value="Maths">
+        <label for="sub3">Maths</label>
+        <input type="checkbox" id="sub6" name="chem" value="Chemistry">
+        <label for="sub6">Chemistry</label>
+
+        <p>
+        <input type="checkbox" id="sub5" name="phy" value="Physics">
+        <label for="sub5">Physics</label>
+        <input type="checkbox" id="sub4" name="sci" value="Science">
+        <label for="sub4">Science</label>
+        <input type="checkbox" id="sub7" name="bio" value="Biology">
+        <label for="sub7">Biology</label>
+        <input type="checkbox" id="sub9" name="stat" value="Stat">
+        <label for="sub9">Statistics</label>
+        </p>
+
+        <p>
+        <input type="checkbox" id="sub8" name="ict" value="Ict">
+        <label for="sub8">ICT</label>
+        <input type="checkbox" id="sub10" name="soc" value="Social">
+        <label for="sub10">Social Studies</label>
+        </p>
+      </div> 
+
+       <div class="inputfield">
+        <label>Salary Range</label>
+        <div class="custom_select">
+          <select>
+            <option value="">Select</option>
+            <option value="threetofive">3000 to 5000</option>
+            <option value="fivetoeight">5000 to 8000</option>
+            <option value="fivetoeight">8000 to 10000</option>
+            <option value="fivetoeight">10000 to 15000</option>
+            <option value="fivetoeight">15000 to 20000</option>
+          </select>
+        </div>
+       </div> 
+
+       <div class="inputfield">
+        <label class = "required">ID Card</label>
+        <input type="file" name ="ID" accept="image/png, image/jpeg" />
+       </div>
+
+       <div class="inputfield">
+        <label>Phone</label>
+        <input type="text" class="input" name = "phone">
+       </div>
+
+       <div class="inputfield">
+        <label class = "required">Email</label>
+        <input type="text" class="input" name = "email" required>
+       </div>
+
+       <div class="inputfield">
+        <label class = "required">Password</label>
+        <input type="password" class="input" name = "password" required>
+       </div>  
+
+       <div class="inputfield">
+        <label class = "required">Confirm Password</label>
+        <input type="password" class="input" name = "confirm">
+       </div> 
+
+       <div class="inputfield">
+        <input type="submit" value="Register" class="btn">
+       </div>
+    </div>
+</div>	</form>
+	
+</body>
+</html>
